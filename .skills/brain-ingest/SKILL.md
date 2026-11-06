@@ -1,5 +1,3 @@
----
-
 ## 3. Agent Skill: `brain-ingest` (`.skills/brain-ingest/SKILL.md`)
 
 Required in Stage 1 (`SK-1`) to add research notes into the Second Brain and log each run in `brain/log.md`, while citing a distilled note (`SB-3`).
