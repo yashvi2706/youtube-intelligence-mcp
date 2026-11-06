@@ -13,7 +13,11 @@ WIKILINK_RE = re.compile(r"\[\[([^\]|#]+)(?:[|#][^\]]*)?\]\]")
 
 
 def strip_code_blocks(text: str) -> str:
-    return re.sub(r"```.*?```", "", text, flags=re.DOTALL)
+    # Strip multi-line code blocks
+    text = re.sub(r"```.*?```", "", text, flags=re.DOTALL)
+    # Strip inline code blocks
+    text = re.sub(r"`[^`]+`", "", text)
+    return text
 
 
 def main() -> int:
