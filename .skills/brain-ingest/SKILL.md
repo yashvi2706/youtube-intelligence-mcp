@@ -1,12 +1,4 @@
 ---
-
-## 3. Agent Skill: `brain-ingest` (`.skills/brain-ingest/SKILL.md`)
-
-Required in Stage 1 (`SK-1`) to add research notes into the Second Brain and log each run in `brain/log.md`, while citing a distilled note (`SB-3`).
-
-### File: `.skills/brain-ingest/SKILL.md`
-```markdown
----
 name: brain-ingest
 description: Ingest external documentation, research material, and AI session summaries into the Obsidian Second Brain vault with valid schema frontmatter, [[wikilinks]], traceability tags, and brain/log.md audit entries.
 version: "1.0.0"
