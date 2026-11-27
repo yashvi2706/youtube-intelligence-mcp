@@ -11,3 +11,13 @@ All runs of `brain-ingest`, `brain-refine`, and `brain-query` are recorded chron
 | `RUN-005` | 2026-11-06T14:51:00Z | `brain-ingest` | Dhyan | [[RN-08-obsidian-para-second-brain]] | — | PASS |
 | `RUN-006` | 2026-11-06T15:06:00Z | `brain-ingest` | Dhyan | [[RN-09-ci-cd-fixture-testing-strategy]] | — | PASS |
 | `RUN-007` | 2026-11-06T15:21:00Z | `brain-ingest` | Dhyan | [[RN-10-prompt-injection-mitigation]] | — | PASS |
+| `RUN-008` | 2026-11-26 | `brain-ingest` | Dhyan | [[RN-11-quota-ledger-and-cache-storage-design]] | `#7` / see [[stage-2-deliverables]] | PASS |
+| `RUN-009` | 2026-11-26 | `brain-ingest` | Raj | [[RN-12-confirmation-token-design]] | `#5`, `#9` / see [[stage-2-deliverables]] | PASS |
+| `RUN-010` | 2026-11-26 | `brain-ingest` | Yashvi | [[RN-13-fixture-recording-and-sanitization]] | `#11` / see [[stage-2-deliverables]] | PASS |
+
+Notes:
+- RUN-008 to RUN-010 were drafted in an AI-assisted session ([[ai-session-stage2-design]]) and
+  reviewed by their authors; status PASS means `scripts/validate_brain.py` exited 0.
+- Runs of `brain-refine` and `brain-query` that change the vault are appended here when they are
+  executed on a branch that is merged. Scratch evaluation runs (TQ-7) are recorded only in
+  `docs/testing/skill-evals.md`.

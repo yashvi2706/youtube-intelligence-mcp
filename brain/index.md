@@ -5,6 +5,8 @@ Welcome to the **YouTube Video Intelligence MCP Server** Second Brain vault. Thi
 ## 1. Projects (`brain/projects/`) — Active Stage Deadlines
 - [[stage-1-deliverables]] — Stage 1 Checklist, SRS Traceability, and PR Assignment Matrix (`#12`)
 - [[stage-1-review]] — Stage 1 Retrospective: What worked, what did not, and what to change (`SB-2`)
+- [[stage-2-deliverables]] — Stage 2 Checklist, Branch/PR Log and Items Carried to Stage 3 (`SE-2`..`SE-5`, `SK-2`..`SK-4`)
+- [[stage-2-review]] — Stage 2 Retrospective: What worked, what did not, and what to change (`SB-2`)
 
 ## 2. Areas (`brain/areas/`) — Ongoing Responsibilities
 - [[quality-and-quota-governance]] — Ongoing API Quota Budgeting (`TQ-6`), Security Auditing, and CI Gatekeeping (`TQ-5`)
@@ -21,9 +23,13 @@ Welcome to the **YouTube Video Intelligence MCP Server** Second Brain vault. Thi
 9. [[RN-09-ci-cd-fixture-testing-strategy]] — Deterministic Fixture Testing vs. Scheduled Live Quota Workflows (`NFR-6`, `TQ-5`, `SK-4`, `#11`)
 10. [[RN-10-prompt-injection-mitigation]] — Defending MCP Confirmation Gates Against Untrusted Video Metadata (`FR-5`, `NFR-4`, `#5`, `#9`)
 11. [[ai-session-stage1-requirements]] — AI-Assisted Session Log for Stage 1 Requirements & Vault Setup (`Section 6`, `#12`)
+12. [[RN-11-quota-ledger-and-cache-storage-design]] — Quota Ledger (Reserve/Commit), Pacific-Time Reset & SQLite Cache Design (`NFR-2`, `NFR-10`, `SAF-1`, `#7`)
+13. [[RN-12-confirmation-token-design]] — HMAC Confirmation Token, Single-Use Consumption & Human-Consent Signal (`FR-5`, `SAF-3`, `NFR-4`, `#5`, `#9`)
+14. [[RN-13-fixture-recording-and-sanitization]] — Fixture Recording, Scrubbing & Hostile-Metadata Fixtures (`NFR-6`, `NFR-7`, `TQ-5`, `#11`)
+15. [[ai-session-stage2-design]] — AI-Assisted Session Log for Stage 2 Analysis, Design Documents & Workflow (`Section 6`)
 
 ## 4. Archive (`brain/archive/`) — Inactive Material
-- Currently empty in Stage 1.
+- Currently empty.
 
 ## 5. Operational Logs
 - [[log]] — Complete chronological audit log of all Second Brain skill executions.
