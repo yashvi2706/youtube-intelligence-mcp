@@ -21,9 +21,9 @@ prs: []
 - Writing the design and ADRs against the SRS surfaced open decisions that code would have hidden:
   the `.skills/` versus `skills/` path (ADR-0001), the user-consent mechanism for playlist writes
   (ADR-0008) and the source of like timestamps (ADR-0011).
-- <TEAM-FILL> Yashvi: one thing from your Stage 2 branches that worked.
-- <TEAM-FILL> Dhyan: one thing from your Stage 2 branches that worked.
-- <TEAM-FILL> Raj: one thing from your Stage 2 branches that worked.
+- Yashvi: validating a clean export of the branch exposed the missing empty PARA folders before submission; PR #17 fixed it and CI went green.
+- Dhyan: the design branch passed ruff, all validators and the tests locally before the PR was opened, so review could focus on content.
+- Raj: the placeholder gate in CI stopped the close-out PR from merging with unfilled results, which forced real PR numbers and evaluation results to be recorded.
 
 ## 2. What Did Not Work
 - Stage 1 notes cite planned PR numbers (#101 to #104) that do not exist, and three research notes
@@ -32,7 +32,7 @@ prs: []
   Repository content must be shared with `git archive` or a pushed branch only (SDLC section 6).
 - The AI sandbox used for drafting could not install `pytest` or `ruff`, so lint and tests were
   only proven by the team's own runs and by CI.
-- <TEAM-FILL> Each member: one thing that did not work in Stage 2 (process, tooling or timing).
+- Windows `Zone.Identifier` files were committed from a copied zip and blocked pulls on Windows until they were removed; a command block meant for another member was run by mistake; and code copied from chat lost its double underscores, breaking one test until the file was restored. Share files with `git archive`, extract zips inside the repo environment, and copy code with the copy button.
 
 ## 3. What to Change for Stage 3
 - Start Stage 3 with the spike tasks (WP3.0 in `docs/dev-plan.md`) and update ADR-0003, ADR-0008,

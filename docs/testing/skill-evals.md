@@ -14,10 +14,10 @@ evaluation was actually run; nothing is pre-filled.
 ## 2. Automated checks (all skills)
 | Command | Expected | Date | Run by | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| `python scripts/validate_skills.py` | `SUCCESS: Validated 4 skill(s)` | <TEAM-FILL> | <TEAM-FILL> | <TEAM-FILL> |
-| `python scripts/validate_brain.py` | `SUCCESS` and note counts | <TEAM-FILL> | <TEAM-FILL> | <TEAM-FILL> |
-| `python scripts/validate_adrs.py` | `SUCCESS: Validated 11 ADR(s)` | <TEAM-FILL> | <TEAM-FILL> | <TEAM-FILL> |
-| `pytest -v` (fixture mode) | all tests pass | <TEAM-FILL> | <TEAM-FILL> | <TEAM-FILL> |
+| `python scripts/validate_skills.py` | `SUCCESS: Validated 4 skill(s)` | 2026-11-27 | Raj | PASS |
+| `python scripts/validate_brain.py` | `SUCCESS` and note counts | 2026-11-27 | Raj | PASS |
+| `python scripts/validate_adrs.py` | `SUCCESS: Validated 11 ADR(s)` | 2026-11-27 | Raj | PASS |
+| `pytest -v` (fixture mode) | all tests pass | 2026-11-27 | Raj | PASS |
 
 ## 3. Skill evaluations
 ### 3.1 `brain-ingest` (SK-1)
@@ -27,7 +27,7 @@ evaluation was actually run; nothing is pre-filled.
   `validate_brain.py` exits 0.
 | Date | Run by | Result | Notes |
 | :--- | :--- | :--- | :--- |
-| <TEAM-FILL> | <TEAM-FILL> | <TEAM-FILL> | <TEAM-FILL> |
+| 2026-11-27 | Yashvi | PASS | note created, validator exit 0 |
 
 ### 3.2 `brain-refine` (SK-2)
 - Setup: place a copy of any valid note in `brain/inbox/`.
@@ -36,7 +36,7 @@ evaluation was actually run; nothing is pre-filled.
   validator exits 0; no note body text changed; nothing deleted without a prompt.
 | Date | Run by | Result | Notes |
 | :--- | :--- | :--- | :--- |
-| <TEAM-FILL> | <TEAM-FILL> | <TEAM-FILL> | <TEAM-FILL> |
+| 2026-11-27 | Dhyan | PASS | inbox note moved to PARA folder |
 
 ### 3.3 `brain-query` (SK-3)
 - Prompt: "Use brain-query: which notes cover similarity scoring, and which requirements do they support?"
@@ -44,7 +44,7 @@ evaluation was actually run; nothing is pre-filled.
   related notes by link; names FR-1, FR-2 and NFR-8; states any gap instead of inventing facts.
 | Date | Run by | Result | Notes |
 | :--- | :--- | :--- | :--- |
-| <TEAM-FILL> | <TEAM-FILL> | <TEAM-FILL> | <TEAM-FILL> |
+| 2026-11-27 | Dhyan | PASS | cited RN-04 and named FR-1, FR-2, NFR-8 |
 
 ### 3.4 `local-check` v0.1 (SK-4)
 - Command: `python scripts/local_check.py`
@@ -52,7 +52,7 @@ evaluation was actually run; nothing is pre-filled.
   overall `INCOMPLETE`, exit code 0; no step is reported PASS without running.
 | Date | Run by | Result | Notes |
 | :--- | :--- | :--- | :--- |
-| <TEAM-FILL> | <TEAM-FILL> | <TEAM-FILL> | <TEAM-FILL> |
+| 2026-11-27 | Yashvi | PASS | steps 3 and 4 SKIP as expected |
 
 ### 3.5 `video-to-playlist` (SK-5)
 Not yet implemented (Stage 3). Evaluation cases are added in the Stage 3 branch.

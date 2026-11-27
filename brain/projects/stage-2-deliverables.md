@@ -37,9 +37,9 @@ Pre-Stage 2 fixes already merged: PR #16 (`stage1-srs-and-review`) and PR #17
 
 | Branch | Author | Reviewer | Merge order | PR |
 | :--- | :--- | :--- | :--- | :--- |
-| `docs/stage2-governance-and-local-check` (governance, CI gates, local-check, traceability) | Yashvi | Dhyan | 1st | <PR-B1> |
-| `docs/stage2-design-and-skills` (architecture, API contract, brain skills, plan) | Dhyan | Raj | 2nd | <PR-B2> |
-| `docs/stage2-adrs-and-closeout` (ADRs, index/log, review, evals) | Raj | Yashvi | 3rd | <PR-B3> |
+| `docs/stage2-governance-and-local-check` (governance, CI gates, local-check, traceability) | Yashvi | Dhyan | 1st | #21 |
+| `docs/stage2-design-and-skills` (architecture, API contract, brain skills, plan) | Dhyan | Raj | 2nd | #22 |
+| `docs/stage2-adrs-and-closeout` (ADRs, index/log, review, evals) | Raj | Yashvi | 3rd | #23 |
 
 ## Open Items Carried to Stage 3
 ADR-0003 (MCP SDK), ADR-0008 (user-consent mechanism) and ADR-0011 (like timestamps) are
