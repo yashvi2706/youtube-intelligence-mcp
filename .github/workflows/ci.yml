@@ -63,6 +63,19 @@ jobs:
         run: |
           python scripts/validate_brain.py
 
+      - name: Validate Architecture Decision Records (SE-3, SB-3)
+        run: |
+          python scripts/validate_adrs.py
+
+      - name: Unresolved Placeholder Gate
+        run: |
+          if grep -rnE --exclude-dir=.git --exclude-dir=.github \
+              '\{\{S[0-9]+-[0-9]+\}\}|<PR-B[0-9]>|<TEAM-FILL>' . ; then
+            echo "Unresolved placeholders found (see lines above)."
+            exit 1
+          fi
+          echo "No unresolved placeholders."
+
       - name: Run Automated Test Suite (Fixture Mode - TQ-5)
         env:
           YOUTUBE_PROVIDER_MODE: "fixture"
