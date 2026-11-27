@@ -10,3 +10,5 @@ venv/
 .obsidian/workspace.json
 client_secret*.json
 token*.json
+# Windows download metadata
+*Zone.Identifier
